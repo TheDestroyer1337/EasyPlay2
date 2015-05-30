@@ -1,0 +1,13 @@
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\bin\Debug\EasyPlay2.exe.config
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\bin\Debug\EasyPlay2.exe
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\bin\Debug\EasyPlay2.pdb
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.csprojResolveAssemblyReference.cache
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\MainWindow.baml
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\MainWindow.g.cs
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\App.g.cs
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2_MarkupCompile.cache
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.g.resources
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.Properties.Resources.resources
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.csproj.GenerateResource.Cache
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.exe
+C:\Users\Oliver\Documents\GitHub\EasyPlay2\EasyPlay2\EasyPlay2\obj\Debug\EasyPlay2.pdb
