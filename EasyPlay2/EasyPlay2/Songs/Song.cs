@@ -10,7 +10,6 @@
  */
 
 using System;
-using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,23 +18,32 @@ using ID3TagLib;
 
 namespace EasyPlay2.Songs {
     class Song {
+        //Definition
+        #region static
         private static int id = 0;
+        #endregion static
 
+        #region member
         private int ID;
         private string Path;
         public string Title { get; set; }
-        private int Length;
+        private string Length;
         private Artist Artist;
         private Album Album;
+        private int NumPlayed;
+        public bool Playing { get; set; }
+        #endregion member
 
+        #region constructor
         public Song(string path, Artist artist, Album album) {
-            //Check if Artist or Album are not null
-            if (artist != null || album != null) {
+            //Check if Artist and Album are not null
+            if (artist != null && album != null && !String.IsNullOrWhiteSpace(path)) {
                 //Save the Filepath
                 Path = path;
                 //Define SongID
                 id++;
                 ID = id;
+                NumPlayed = 0;
                 //Save Artist and Album
                 Artist = artist;
                 Album = album;
@@ -48,10 +56,55 @@ namespace EasyPlay2.Songs {
                     Title = f.Text;
                 else 
                     Title = System.IO.Path.GetFileName(Path);
+                //Length definition
+                System.Windows.Media.MediaPlayer player = new System.Windows.Media.MediaPlayer();
+                player.Open(new Uri(Path));
+                while (!player.NaturalDuration.HasTimeSpan) {
+
+                }
+                System.Windows.Duration d = player.NaturalDuration;
+                string Splittit = d.ToString();
+                string[] splitD = Splittit.Split(new char[] { ':', '.' });
+                int h = Convert.ToInt16(splitD[0]);
+                int min = Convert.ToInt16(splitD[1]);
+                int sec = Convert.ToInt16(splitD[2]);
+                Length = h + ":" + min + ":" + sec;
             } else {
                 //Artist or Album are null: throw Exception
                 throw new NullReferenceException("Artist and Album must be filled with objects");
             }
         }
+        #endregion constructor
+
+        //Methods
+        #region getMethods
+        public int getID() {
+            return ID;
+        }
+
+        public string getPath() {
+            return Path;
+        }
+
+        public string getLength() {
+            return Length;
+        }
+
+        public Artist getArtist() {
+            return Artist;
+        }
+
+        public Album getAlbum() {
+            return Album;
+        }
+
+        public int getNumPlayed() {
+            return NumPlayed;
+        }
+
+        public void addNumPlayed() {
+            NumPlayed++;
+        }
+        #endregion getMethods
     }
 }
